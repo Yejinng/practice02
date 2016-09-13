@@ -7,7 +7,16 @@ public class Prob1 {
 		int count = 0;
 		int sum = 0;
 
-		/* 여기에 코드를 작성합니다. */
+		
+		for(int i =0; i<13; i++)	{
+			if(data[i] % 3 != 0 )	{
+				continue;
+			}
+			
+			count++;
+			sum = sum + data[i];
+		}
+		
 		
 		System.out.println( "주어진 배열에서 3의 배수의 개수=>" + count );
 		System.out.println( "주어진 배열에서 3의 배수의 합=>" + sum );
